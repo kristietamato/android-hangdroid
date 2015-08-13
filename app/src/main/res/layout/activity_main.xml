@@ -20,7 +20,8 @@
             android:text="Single Player"
             android:id="@+id/button"
             android:layout_marginBottom="10dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="startSinglePlayer" />
 
         <Button
             android:layout_width="wrap_content"
