@@ -16,6 +16,8 @@ public class GameActivity extends AppCompatActivity
 
     int nFailCounter = 0;
 
+    int nCorrectGuessedLetter = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -29,6 +31,8 @@ public class GameActivity extends AppCompatActivity
         EditText myEditText = (EditText) findViewById(R.id.editTextLetter);
 
         String letter = myEditText.getText().toString();
+
+        myEditText.setText(""); // resets the EditText for new letter
 
         if (letter.length() == 1)
         {
@@ -57,6 +61,8 @@ public class GameActivity extends AppCompatActivity
                 letterGuessed = true;
 
                 showLetterAtIndex(counter, charInput);
+
+                nCorrectGuessedLetter++;
             }
         }
 
@@ -64,6 +70,35 @@ public class GameActivity extends AppCompatActivity
         {
             letterFailed(Character.toString(charInput));
         }
+
+        if (nCorrectGuessedLetter == mWord.length())
+        {
+            // TODO
+            // Score one point
+            // Clear all the text
+            clearScreenText();
+            // Start the game
+        }
+    }
+
+    // clears all the text on the screen after the game is over
+    public void clearScreenText()
+    {
+        TextView textViewFailed = (TextView) findViewById(R.id.failedLetters);
+        textViewFailed.setText("");
+
+        nCorrectGuessedLetter = 0;
+        nFailCounter = 0;
+
+        LinearLayout layoutLetter = (LinearLayout) findViewById(R.id.layoutLetters);
+        for (int counter = 0; counter < layoutLetter.getChildCount(); counter++)
+        {
+            TextView currentTextView = (TextView) layoutLetter.getChildAt(counter);
+            currentTextView.setText("_");
+        }
+
+        ImageView imageView = (ImageView) findViewById(R.id.imageView);
+        imageView.setImageResource(R.drawable.hangdroid_0);
     }
 
     public void letterFailed(String letterFailed)
