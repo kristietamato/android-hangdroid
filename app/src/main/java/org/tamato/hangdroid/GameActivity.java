@@ -1,5 +1,6 @@
 package org.tamato.hangdroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -122,7 +123,8 @@ public class GameActivity extends AppCompatActivity
                     break;
             case 5: imageView.setImageResource(R.drawable.hangdroid_5);
                     break;
-            case 6: //TODO Game over
+            case 6: Intent gameOverIntent = new Intent(this, GameOverActivity.class);
+                    startActivity(gameOverIntent);
                     break;
         }
     }
