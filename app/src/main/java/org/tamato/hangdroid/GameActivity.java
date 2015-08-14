@@ -19,6 +19,8 @@ public class GameActivity extends AppCompatActivity
 
     int nCorrectGuessedLetter = 0;
 
+    int nPoints = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -76,8 +78,11 @@ public class GameActivity extends AppCompatActivity
         {
             // TODO
             // Score one point
+            nPoints++;
+
             // Clear all the text
             clearScreenText();
+
             // Start the game
         }
     }
@@ -124,6 +129,7 @@ public class GameActivity extends AppCompatActivity
             case 5: imageView.setImageResource(R.drawable.hangdroid_5);
                     break;
             case 6: Intent gameOverIntent = new Intent(this, GameOverActivity.class);
+                    gameOverIntent.putExtra("PONTS_IDENTIFIER", nPoints);
                     startActivity(gameOverIntent);
                     break;
         }
