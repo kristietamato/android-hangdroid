@@ -20,6 +20,8 @@ public class Multiplayer extends AppCompatActivity {
 
         String wordToGuess = editText.getText().toString();
 
+        editText.setText("");
+
         Intent myIntent = new Intent(this, MultiplayerGameActivity.class);
 
         myIntent.putExtra("WORD_IDENTIFIER", wordToGuess);

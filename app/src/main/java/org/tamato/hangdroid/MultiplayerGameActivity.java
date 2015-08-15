@@ -28,7 +28,7 @@ public class MultiplayerGameActivity extends AppCompatActivity
 
         String wordSent = getIntent().getStringExtra("WORD_IDENTIFIER");
 
-        word = wordSent;
+        word = wordSent.toUpperCase();
 
         createTextView(word);
     }
@@ -82,11 +82,8 @@ public class MultiplayerGameActivity extends AppCompatActivity
             // Score one point
             nPoints++;
 
-            // Clear all the text
-            clearScreenText();
-
-            // Restart the game
-
+            // Switch player
+            finish();
         }
     }
 
