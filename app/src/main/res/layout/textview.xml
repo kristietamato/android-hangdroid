@@ -5,6 +5,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="_"
-        android:id="@+id/textView4"
+        android:id="@+id/textViewUnderscore"
         android:padding="5dp"
-        android:textSize="40dp" />
+        android:textSize="40dp"
+        android:textColor="#298cff" />

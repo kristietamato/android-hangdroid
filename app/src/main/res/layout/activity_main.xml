@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Single Player"
-            android:id="@+id/button"
+            android:id="@+id/btnSingleplayer"
             android:layout_marginBottom="10dp"
             android:layout_gravity="center_horizontal"
             android:onClick="startSinglePlayer" />
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Multiplayer"
-            android:id="@+id/button2"
+            android:id="@+id/btnMultiplayer"
             android:layout_marginBottom="10dp"
             android:layout_gravity="center_horizontal"
             android:onClick="startMultiplayer" />
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Scores"
-            android:id="@+id/button3"
+            android:id="@+id/btnScores"
             android:layout_marginBottom="10dp"
             android:layout_gravity="center_horizontal"
             android:onClick="openScoresActivity"/>
@@ -46,8 +46,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/textView"
+        android:text="Hang Droid"
+        android:id="@+id/textViewGameTitle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"

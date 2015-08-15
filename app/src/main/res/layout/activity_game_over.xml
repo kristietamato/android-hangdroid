@@ -54,7 +54,8 @@
             android:text=""
             android:id="@+id/textViewPoints"
             android:layout_marginRight="5dp"
-            android:textSize="40dp" />
+            android:textSize="40dp"
+            android:textColor="#298cff" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -63,7 +64,8 @@
             android:text="Points"
             android:id="@+id/textViewPointsString"
             android:layout_marginRight="5dp"
-            android:textSize="40dp" />
+            android:textSize="40dp"
+            android:textColor="#298cff" />
     </LinearLayout>
 
     <TextView
