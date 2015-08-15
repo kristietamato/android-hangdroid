@@ -6,4 +6,5 @@
     <string name="title_activity_game">GameActivity</string>
     <string name="title_activity_game_over">GameOverActivity</string>
     <string name="title_activity_multiplayer">Multiplayer</string>
+    <string name="title_activity_scores">ScoresActivity</string>
 </resources>

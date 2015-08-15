@@ -28,4 +28,10 @@ public class MainActivity extends AppCompatActivity
 
         startActivity(myIntent);
     }
+
+    public void openScoresActivity(View v)
+    {
+        Intent myIntent = new Intent(this, ScoresActivity.class);
+        startActivity(myIntent);
+    }
 }

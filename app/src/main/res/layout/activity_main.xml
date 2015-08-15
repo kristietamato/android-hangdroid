@@ -38,7 +38,8 @@
             android:text="Scores"
             android:id="@+id/button3"
             android:layout_marginBottom="10dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:onClick="openScoresActivity"/>
     </LinearLayout>
 
     <TextView
