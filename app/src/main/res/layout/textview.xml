@@ -8,4 +8,5 @@
         android:id="@+id/textViewUnderscore"
         android:padding="5dp"
         android:textSize="40dp"
-        android:textColor="#298cff" />
+        android:textColor="@color/blue"
+    android:background="@color/background_color" />
