@@ -38,7 +38,7 @@ public class GameOverActivity extends AppCompatActivity
 
         String previousScores = preferences.getString("SCORES", "");
 
-        editor.putString("SCORES", name + " " + nPoints + " POINTS\n" + previousScores);
+        editor.putString("SCORES", name + " \t " + " \t " + nPoints + " points" + "\n" + previousScores);
         editor.commit();
 
         // close the activity
